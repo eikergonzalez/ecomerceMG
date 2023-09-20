@@ -28,6 +28,7 @@
                                         <span class="text-danger">{{ $errors->first('email') }}</span>
                                     @endif
                                 </div>
+
                                 <div class="form-group">
                                     <label for="txt-password" class="required">{{ __('Password') }}</label>
                                     <div class="form__password">
