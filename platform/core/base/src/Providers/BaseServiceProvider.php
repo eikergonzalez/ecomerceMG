@@ -245,7 +245,7 @@ class BaseServiceProvider extends ServiceProvider
                 'url' => null,
                 'permissions' => ['users.index'],
             ])
-            ->registerItem([
+            /* ->registerItem([
                 'id' => 'cms-core-system-information',
                 'priority' => 5,
                 'parent_id' => 'cms-core-platform-administration',
@@ -253,7 +253,7 @@ class BaseServiceProvider extends ServiceProvider
                 'icon' => null,
                 'url' => route('system.info'),
                 'permissions' => [ACL_ROLE_SUPER_USER],
-            ])
+            ]) */
             ->registerItem([
                 'id' => 'cms-core-system-cache',
                 'priority' => 6,

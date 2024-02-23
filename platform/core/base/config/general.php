@@ -680,7 +680,7 @@ return [
             ['audio', 'controls', 'Bool'],
         ],
     ],
-    'enable_system_updater' => env('CMS_ENABLE_SYSTEM_UPDATER', true),
+    'enable_system_updater' => env('CMS_ENABLE_SYSTEM_UPDATER', false),
     'enable_marketplace_feature' => env('CMS_ENABLE_MARKETPLACE_FEATURE', true),
     'phone_validation_rule' => env('CMS_PHONE_VALIDATION_RULE', 'min:8|max:15|regex:/^([0-9\s\-\+\(\)]*)$/'),
     'disable_verify_csrf_token' => env('CMS_DISABLE_VERIFY_CSRF_TOKEN', false),
@@ -688,7 +688,7 @@ return [
     'db_strict_mode' => env('DB_STRICT', true),
     'enable_ini_set' => env('CMS_ENABLE_INI_SET', true),
     'upgrade_php_require_disabled' => env('CMS_UPGRADE_PHP_REQUIRE_DISABLED', false),
-    'enabled_cleanup_database' => env('CMS_ENABLED_CLEANUP_DATABASE', true),
+    'enabled_cleanup_database' => env('CMS_ENABLED_CLEANUP_DATABASE', false),
     'google_fonts_url' => env('CMS_GOOGLE_FONTS_URL', 'https://fonts.bunny.net'),
     'google_fonts_enabled_cache' => env('CMS_GOOGLE_FONTS_ENABLED_CACHE', true),
 ];

@@ -23,7 +23,7 @@ class BackupServiceProvider extends ServiceProvider
 
         $this->app->register(CommandServiceProvider::class);
 
-        Event::listen(RouteMatched::class, function () {
+        /* Event::listen(RouteMatched::class, function () {
             dashboard_menu()->registerItem([
                 'id' => 'cms-plugin-backup',
                 'priority' => 8,
@@ -33,7 +33,7 @@ class BackupServiceProvider extends ServiceProvider
                 'url' => route('backups.index'),
                 'permissions' => ['backups.index'],
             ]);
-        });
+        }); */
 
         $this->app->booted(function () {
             $this->app->register(HookServiceProvider::class);
